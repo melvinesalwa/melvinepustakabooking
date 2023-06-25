@@ -4,8 +4,7 @@
 </head>
 <body>
 <center>
-<form action="<?= base_url('matakuliah/cetak'); ?>"
-method="post">
+<form action="<?= base_url('matakuliah/cetak'); ?>" method="post">
 <table>
 <tr>
 <th colspan="3">
@@ -14,7 +13,6 @@ Form Input Data Mata Kuliah
 </tr>
 <tr>
 <td colspan="3"
-39
 <hr>
 </td>
 </tr>
@@ -22,14 +20,16 @@ Form Input Data Mata Kuliah
 <th>Kode MTK</th>
 <th>:</th>
 <td>
-<input type="text" name="kode" id="kode">
+<input type="text" name="kode" id="kode" placeholder="reqiured">
+<?= form_error('kode'); ?>
 </td>
 </tr>
 <tr>
 <th>Nama MTK</th>
 <td>:</td>
 <td>
-<input type="text" name="nama" id="nama">
+<input type="text" name="nama" id="nama" placeholder="reqiured">
+<?= form_error('nama'); ?>
 </td>
 </tr>
 <tr>
